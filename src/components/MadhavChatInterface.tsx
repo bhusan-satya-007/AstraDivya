@@ -102,7 +102,7 @@ const MadhavChatInterface = () => {
             className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
           >
             {message.sender === 'madhav' && (
-              <div className="mr-2">
+              <div className="mr-2 hidden sm:block">
                 <img 
                   src="/lovable-uploads/Madhav2.png" 
                   alt="Madhav" 

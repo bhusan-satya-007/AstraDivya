@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SanskritSymbol from './SanskritSymbol';
@@ -7,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="mt-auto py-8 border-t border-cosmic-700">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
               <SanskritSymbol className="mr-1" />
@@ -50,10 +49,10 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-4 border-t border-cosmic-700 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 text-center md:text-left mb-4 md:mb-0">
             © {new Date().getFullYear()} AstraDivya. All rights reserved.
           </p>
-          <div className="mt-4 md:mt-0 flex space-x-4">
+          <div className="flex space-x-4">
             <a href="#" className="text-gray-400 hover:text-mystic-300">
               <span className="sr-only">Twitter</span>
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
