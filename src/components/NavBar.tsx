@@ -21,8 +21,8 @@ const NavBar = () => {
         <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold flex items-center">
-              <img src="/favicon.ico" alt="AstraDivya Logo" className="w-8 h-8 rounded-full shadow-mystic-500/30 mr-2" />
+            <span className="text-xl md:text-2xl font-bold flex items-center">
+              <img src="/favicon.ico" alt="AstraDivya Logo" className="w-6 h-6 md:w-8 md:h-8 rounded-full shadow-mystic-500/30 mr-2" />
               <span className="text-white font-mystic tracking-wider ml-2 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-100 to-gray-200">
                 AstraDivya
               </span>
@@ -75,20 +75,40 @@ const NavBar = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-cosmic-900/95 backdrop-blur-lg border-t border-mystic-500/30">
             <nav className="container mx-auto px-4 py-4 space-y-4">
-              <NavLink to="/" className="block text-sm font-medium text-gray-300 hover:text-mystic-300">
+              <NavLink 
+                to="/" 
+                className={({ isActive }) => `block text-sm font-medium ${isActive ? 'text-mystic-300' : 'text-gray-300 hover:text-mystic-300'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 <Home className="h-4 w-4 inline mr-1" /> Home
               </NavLink>
-              <NavLink to="/horoscope" className="block text-sm font-medium text-gray-300 hover:text-mystic-300">
+              <NavLink 
+                to="/horoscope" 
+                className={({ isActive }) => `block text-sm font-medium ${isActive ? 'text-mystic-300' : 'text-gray-300 hover:text-mystic-300'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 <Star className="h-4 w-4 inline mr-1" /> Daily Horoscope
               </NavLink>
-              <NavLink to="/birth-chart" className="block text-sm font-medium text-gray-300 hover:text-mystic-300">
+              <NavLink 
+                to="/birth-chart" 
+                className={({ isActive }) => `block text-sm font-medium ${isActive ? 'text-mystic-300' : 'text-gray-300 hover:text-mystic-300'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 <Calendar className="h-4 w-4 inline mr-1" /> Birth Chart
               </NavLink>
               <div className="pt-4 border-t border-mystic-500/30">
-                <NavLink to="/signin" className="block text-sm font-medium text-gray-300 hover:text-mystic-300 mb-2">
+                <NavLink 
+                  to="/signin" 
+                  className="block text-sm font-medium text-gray-300 hover:text-mystic-300 mb-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   <LogIn className="h-4 w-4 inline mr-1" /> Sign In
                 </NavLink>
-                <NavLink to="/signup" className="block text-sm font-medium text-gray-300 hover:text-mystic-300">
+                <NavLink 
+                  to="/signup" 
+                  className="block text-sm font-medium text-gray-300 hover:text-mystic-300"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   <UserPlus className="h-4 w-4 inline mr-1" /> Sign Up
                 </NavLink>
               </div>
