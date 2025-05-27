@@ -82,7 +82,7 @@ const MadhavChatInterface = () => {
         <div className="flex items-center">
           <div className="relative">
             <img 
-              src="public\lovable-uploads\Madhav2.png" 
+              src="/lovable-uploads/Madhav2.png" 
               alt="Madhav" 
               className="w-10 h-10 object-cover rounded-full border-2 border-mystic-400"
             />
@@ -104,7 +104,7 @@ const MadhavChatInterface = () => {
             {message.sender === 'madhav' && (
               <div className="mr-2">
                 <img 
-                  src="public\lovable-uploads\Madhav2.png" 
+                  src="/lovable-uploads/Madhav2.png" 
                   alt="Madhav" 
                   className="w-8 h-8 object-cover rounded-full border border-mystic-400"
                 />

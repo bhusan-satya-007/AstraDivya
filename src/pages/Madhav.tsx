@@ -15,7 +15,7 @@ const Madhav = () => {
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
           <img 
-            src="/Madhav2.png" 
+            src="/lovable-uploads/Madhav2.png" 
             alt="Madhav" 
             className="w-32 h-32 object-contain"
           />

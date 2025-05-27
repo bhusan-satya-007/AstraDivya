@@ -135,16 +135,18 @@ const Index = () => {
         <div className="absolute inset-0 bg-mystic-500/5 cosmic-dots"></div>
         <div className="container mx-auto relative">
           <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <div className="card-cosmic rounded-2xl p-1 mystic-border-glow">
+            <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
+              <div className="card-cosmic rounded-2xl p-1 mystic-border-glow w-[400px] h-[400px] group transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(250,204,21,0.6)]">
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-300/0 via-yellow-200/0 to-yellow-300/0 group-hover:from-yellow-300/50 group-hover:via-yellow-200/60 group-hover:to-yellow-300/50 transition-all duration-500"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-amber-300/0 via-yellow-200/0 to-amber-300/0 group-hover:from-amber-300/40 group-hover:via-yellow-200/50 group-hover:to-amber-300/40 transition-all duration-500"></div>
                 <img 
                   src="/lovable-uploads/Madhav2.png" 
                   alt="Madhav AI" 
-                  className="rounded-2xl object-cover h-96 w-full"
+                  className="rounded-2xl object-cover w-full h-full relative z-10 transition-transform duration-500 group-hover:scale-[1.02]"
                 />
               </div>
             </div>
-            <div className="md:w-1/2 md:pl-12">
+            <div className="md:w-1/2 md:pl-12 max-w-xl">
               <h2 className="text-3xl md:text-4xl font-mystic font-semibold mb-4">
                 <span className="mystic-gradient">Meet Madhav</span>
               </h2>
